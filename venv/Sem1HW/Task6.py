@@ -43,11 +43,12 @@ def check_luck(num):
         if Summa(int(num) // 10 ** x) == Summa(int(num) % 10 ** x):
             luck = True
             if x == 3:
-                print(f"Ваш билет счастливый пополам {num[0:6-x:1]} | {num[6-x::1]} ")
+                print(f"Ваш билет счастливый пополам {num[0:6 - x:1]} | {num[6 - x::1]} ")
             else:
-                print(f"Ваш билет счастливый по частям {num[0:6-x:1]} | {num[6-x::1]}  ")
+                print(f"Ваш билет счастливый по частям {num[0:6 - x:1]} | {num[6 - x::1]}  ")
     if not luck:
         print("Ваш билет оказался несчатливым")
+
 
 number = input_int("Введите номер билета (6 знаков): ")
 check_luck(number)
